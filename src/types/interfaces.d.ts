@@ -55,4 +55,10 @@ export interface MovieListPageTemplateProps {
   movies: ListedMovie[];
   title: string;
   selectFavourite: (m: number) => void;
+} 
+
+export interface Review{
+  id: string;
+  content: string
+  author: string
 }
