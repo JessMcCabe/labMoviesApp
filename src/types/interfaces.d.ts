@@ -54,8 +54,8 @@ export type FilterOption = "title" | "genre";
 export interface MovieListPageTemplateProps {
   movies: ListedMovie[];
   title: string;
-  selectFavourite: (m: number) => void;
-} 
+  action: (m: MovieT) => void;
+}
 
 export interface Review{
   id: string;
