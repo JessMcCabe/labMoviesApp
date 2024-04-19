@@ -10,7 +10,7 @@ import MovieFilterUI, {
 } from "../components/movieFilterUI";
 import { useQuery } from "react-query";
 import Spinner from "../components/spinner";
-import AddToFavouritesIcon from '../components/cardIcons/addToFavourites'
+import AddToPlaylistIcon from '../components/cardIcons/AddToPlaylist'
 
 
 const titleFiltering = {
@@ -60,7 +60,7 @@ const UpcomingMoviesPage = (props) => {
         title="Upcoming Movies"
         movies={displayedMovies}
         action={(movie: ListedMovie) => {
-          return <AddToFavouritesIcon {...movie} />
+          return <AddToPlaylistIcon {...movie} />
         }}
       />
       <MovieFilterUI
