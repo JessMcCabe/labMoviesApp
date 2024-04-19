@@ -3,6 +3,7 @@ import PageTemplate from "../components/templateMovieListPage";
 import { getUpcomingMovies } from "../api/tmdb-api";
 import useFiltering from "../hooks/useFiltering";
 import {UpcomingMovies} from "../types/interfaces";
+import {ListedMovie} from "../types/interfaces";
 import MovieFilterUI, {
   titleFilter,
   genreFilter,
